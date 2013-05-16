@@ -1,6 +1,15 @@
+# Mac OS #
+.DS_Store
+
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# Binaries Folders #
+bin*
+
+# Hidden Files/Folders #
+.*
