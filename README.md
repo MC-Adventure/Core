@@ -26,7 +26,7 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 4. Download and install Github [here] (http://windows.github.com/) (Windows) or [here] (http://mac.github.com/) (Mac OS X 10.7+).  For Linux, you could download it as a .zip/tarball and unzip it.
 	* Create an account.
   * Scroll to the top of this page, login at the top-right, and then click `Clone to Windows/Mac` near the top-left of the page.
-  * You should see Github flash and `pahimar/Equivalent-Exchange-3` appear.  (The local repository on Windows defaults to `C:\Users\(username)\Documents\GitHub\Equivalent-Exchange-3`, you can change it if you want but then you have to find it again on Github).
+  * You should see Github flash and `MC-Adventure/core` appear.  (The local repository on Windows defaults to `C:\Users\(username)\Documents\GitHub\Core`, you can change it if you want but then you have to find it again on Github).
 5. Create an empty directory for EE3 development.  This directory is refernced as `mcdev` from now on.  It can be where you cloned EE3, but it'll be a little messy.
 
 
@@ -69,7 +69,7 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 9. Copy the jar into your Minecraft mods folder, and play Minecraft!
 
 #### Updating Your Repo (For Windows/Mac)
-1. Check to see if pahimar updated EE3 since you last compiled.  If he did, follow these instructions.
+1. Check to see if we updated the core since you last compiled.  If we did, follow these instructions.
 2. Open Github.
 3. Double-click on MC-Adventure/Core.
 4. At the top, there is a button named `Sync`/`Sync Branch` (or `Refreshing...` if it's still checking).
@@ -81,12 +81,12 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 #### Submitting a PR
 So you found a bug in our code?  Think you can make it more efficient?  Want to help in general?  Great!
 
-1. **IMPORTANT:  WE DOES *NOT* WANT ANY** `build.xml` **CHANGES, UNLESS it fixes up something broken**
+1. **IMPORTANT:  WE DO *NOT* WANT ANY** `build.xml` **CHANGES, UNLESS it fixes up something broken**
 2. If you haven't already, create a Github account.
 3. Click the little branch/plus icon at the top-right of this page (below your username).
 4. Make the changes that you want to.
 5. Click `Pull Request` at the top-middle of the page (left of your fork's name, to the right of `Watch` and `Fork`).
-6. Enter your PR's title, and create a detailed description telling pahimar what you changed.
+6. Enter your PR's title, and create a detailed description telling us what you changed.
 7. Click `Send pull request`, and you're done!
 
 #### Creating an Issue
@@ -99,4 +99,4 @@ Our core causes crashes every time?  Have a suggestion?  Found a bug?  Create an
 5. Click `Submit new issue`, and you're done!
 
 #### Credits
-Thanks to the awesome people at Mojang, the Minecraft community, the people behind Minecraft Forge, Pahimar (for the excellent tutorials shown above and some very good modding tutorials), and everyone who has ever contributed something to minecraft.
+Thanks to the awesome people at Mojang, the Minecraft community, the people behind Minecraft Forge, [Pahimar] (http://github.org/pahimar) (for the excellent tutorials shown above and some very good modding tutorials), and everyone who has ever contributed something to minecraft.
