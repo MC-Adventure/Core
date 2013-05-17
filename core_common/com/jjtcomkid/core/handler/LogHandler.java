@@ -5,6 +5,13 @@ import java.util.logging.Logger;
 
 import cpw.mods.fml.common.FMLLog;
 
+/**
+ * Core
+ *
+ * @author jjtcomkid
+ * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
+ *
+ */
 public class LogHandler {
 	private Logger logger;
 
