@@ -13,3 +13,6 @@ bin*
 
 # Hidden Files/Folders #
 .*
+
+# Ant Build Properties #
+build.properties
