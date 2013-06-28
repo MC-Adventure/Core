@@ -27,7 +27,7 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 	* Create an account.
   * Scroll to the top of this page, login at the top-right, and then click `Clone to Windows/Mac` near the top-left of the page.
   * You should see Github flash and `MC-Adventure/core` appear.  (The local repository on Windows defaults to `C:\Users\(username)\Documents\GitHub\Core`, you can change it if you want but then you have to find it again on Github).
-5. Create an empty directory for EE3 development.  This directory is refernced as `mcdev` from now on.  It can be where you cloned EE3, but it'll be a little messy.
+5. Create an empty directory for mod development.  This directory is refernced as `mcdev` from now on.  It can be where you cloned this mod, but it'll be a little messy.
 
 
 #### Setup MCP
