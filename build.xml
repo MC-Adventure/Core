@@ -22,11 +22,9 @@
 		</copy>
 	</target>
 	
-	<!--<target name="replace_tokens">
+	<target name="replace_tokens">
 		<replace dir="${build.dir.development}\mcp\src\minecraft" token="@VERSION@" value="${build.release.mod.version}" />
-		<replace dir="${build.dir.development}\mcp\src\minecraft" token="@FINGERPRINT@" value="${build.release.mod.fingerprint}" />
-		<replace dir="${build.dir.development}\mcp\src\minecraft" token="@BUILD_NUMBER@" value="${build_number.build_number}" />
-	</target>-->
+	</target>
 	
 	<target name="recompile">
 		<exec dir="${build.dir.development}\mcp" executable="cmd" osfamily="windows">
@@ -47,7 +45,7 @@
 	</target>
 	
 	<target name="sign_jar">
-		<signjar jar="${build.dir.release}\${build.release.minecraft.version}\${build.release.mod.version}\core-universal-${build.release.mod.version}-${build_number.build_number}.jar" keystore="${build.keystore.location}" alias="${build.keystore.alias}" storepass="${build.keystore.password}" />
+		<signjar jar="${build.dir.build}\${build.release.minecraft.version}\${build.release.mod.version}\core-universal-${build.release.mod.version}-${build_number.build_number}.jar" keystore="${build.keystore.location}" alias="${build.keystore.alias}" storepass="${build.keystore.password}" />
 	</target>
 	
 	<target name="build">
@@ -59,8 +57,8 @@
 		<antcall target="reobfuscate" />
 		
 		<!-- Build the jar -->
-		<mkdir dir="${build.dir.release}\${build.release.minecraft.version}\${build.release.mod.version}" />
-		<jar destfile="${build.dir.release}\${build.release.minecraft.version}\${build.release.mod.version}\core-universal-${build.release.mod.version}-${build_number.build_number}.jar">
+		<mkdir dir="${build.dir.build}\${build.release.minecraft.version}\${build.release.mod.version}" />
+		<jar destfile="${build.dir.build}\${build.release.minecraft.version}\${build.release.mod.version}\core-universal-${build.release.mod.version}-${build_number.build_number}.jar">
 			<fileset dir="${build.dir.development}\mcp\src\minecraft\" includes="mcmod.info" />
 			<fileset dir="${build.dir.development}\mcp\reobf\minecraft" />
 			<!--<fileset dir="${build.dir.development}\source\Core\resources" />-->
