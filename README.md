@@ -31,12 +31,10 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 
 
 #### Setup MCP
-1. Download the latest version of MCP from [here] (http://mcp.ocean-labs.de/index.php/MCP_Releases), e.g. mcp751.zip. Install MCP dependencies as listed on the website if neccessary.
-2. Inside `mcdev`, create a directory named `mcp` and unzip the MCP .zip file into it.
-	* To verify, check if a file named `CHANGELOG` exists inside `mcp`.
-3. Download the latest forge **source** for Minecraft 1.5.2 and unzip it into `mcp`.  You need at least Forge 7.7.1.500 (Forge 7.8.0.684 if using 1.5.2), best way is to get it from [here] (http://files.minecraftforge.net/).
+1. Inside `mcdev`, create a directory named `forge`.
+2. Download the latest forge **source** for Minecraft 1.6.2 and unzip it into `forge`.  Best way is to get it from [here] (http://files.minecraftforge.net/).
 	* To verify, check if a application named `install.sh` exists. 
-4. Execute `install.sh` (Linux and Mac) or `install.cmd` (Windows), both found in `mcdev\mcp\forge`. On Linux you might have to `chmod +x install.sh` before you can execute it. On some system configurations you need to execute `install.sh` from within the `forge` directory whereas on others it doesn't matter. Just check the output for error messages to find out what you need to do.
+3. Execute `install.sh` (Linux and Mac) or `install.cmd` (Windows), both found in `mcdev\forge`. On Linux you might have to `chmod +x install.sh` before you can execute it. On some system configurations you need to execute `install.sh` from within the `forge` directory whereas on others it doesn't matter. Just check the output for error messages to find out what you need to do.
 
 #### Setup our Core
 1. Inside `mcdev`, create a directory named `source`.
@@ -46,10 +44,10 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 ***
 
 	mcdev
-	\-mcp
-		\-complicated mcp stuff (should have CHANGELOG).
-		\-forge
-		\-jars
+	\-forge
+		\-complicated forge stuff (should have install.sh/cmd).
+		\-mcp
+			\-jars
 	\-source
 		\-Core
 			\-Mod files (should have build.xml).
@@ -59,12 +57,12 @@ IMPORTANT: This is not guaranteed to work as it has not been tested extensively,
 	* Open it up with any text editor, and type into it the following (fully customizable except for `dir.development`):
  		* `dir.development=../../`
 		* `dir.release=Releases`
-		* `release.minecraft.version=1.5.2`
+		* `release.minecraft.version=1.6.2`
 5. Open up your OS's command line (Command Prompt in Windows, Terminal in Linux and Mac).
 6. Navigate to `mcdev\source\Core` by executing `cd mcdev's location\source\Core`.
 7. Execute `ant release`. This will generally take around 5-15 minutes, depending on your computer.  If you've done everything right, `BUILD SUCCESSFUL` is displayed after it finishes.
 	* If you see `BUILD FAILED`, check the error output (it should be right around `BUILD FAILED`), fix everything, and try again.
-8. Go to `mcdev\source\Core\Releases\1.5.2\`.
+8. Go to `mcdev\source\Core\Releases\1.6.2\`.
 	*  You should see a .jar named `core-universal.jar`.
 9. Copy the jar into your Minecraft mods folder, and play Minecraft!
 
